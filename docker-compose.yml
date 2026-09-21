@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   enigma:
     build:
@@ -11,11 +9,14 @@ services:
       - traefik
     labels:
       - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
       - "traefik.http.routers.enigma.rule=Host(`enigma.urfubest.ru`)"
+      - "traefik.http.routers.enigma.entryPoints=https"
+      - "traefik.http.routers.enigma.tls=true"
+      - "traefik.http.routers.enigma.tls.certresolver=letsEncrypt"
+      - "traefik.http.routers.enigma.tls.options=default"
       - "traefik.http.routers.enigma.service=enigma"
       - "traefik.http.services.enigma.loadbalancer.server.port=81"
-      - "traefik.http.routers.enigma.entryPoints=http"
-      - "traefik.docker.network=traefik"
 
 networks:
   traefik:
