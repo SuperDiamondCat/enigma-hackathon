@@ -16,7 +16,7 @@ export const Hero = () => {
             <Window title="case.hack">
               <div className={styles.window}>
                 <Typography variant="windowContent" color="primary">
-                  AI / ML
+                  IT
                 </Typography>
               </div>
             </Window>
@@ -25,7 +25,7 @@ export const Hero = () => {
               <Window title="case.hack">
                 <div className={styles.window}>
                   <Typography variant="windowContent" color="primary">
-                    Разработка
+                    Цифровая инженерия
                   </Typography>
                 </div>
               </Window>
@@ -35,30 +35,44 @@ export const Hero = () => {
         </div>
 
         <div className={styles.aboutActions}>
-          <button
-            disabled
-            className={styles.participateButton}
-          >
+          <button className={styles.participateButton}>
             <Typography variant="button" color="invert">
-              РЕГИСТРАЦИЯ ЗАКРЫТА
+              УЧАСТВОВАТЬ
             </Typography>
             <div className={styles.clickHint} />
           </button>
 
-          <a
-            href={LINKS.telegram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.telegramLink}
-          >
-            <Typography variant="tgLink" color="primary">
-              Подписывайтесь
-              <br />
-              на наш Telegram
-            </Typography>
+          <div className={styles.socials}>
+            <a
+              href={LINKS.telegram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
+              <Typography variant="tgLink" color="primary">
+                Подписывайтесь
+                <br />
+                на наш Telegram
+              </Typography>
 
-            <LinkIcon className={styles.iconLink} />
-          </a>
+              <LinkIcon className={styles.iconLink} />
+            </a>
+
+            <a
+              href={LINKS.vk}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
+              <Typography variant="tgLink" color="primary">
+                Подписывайтесь
+                <br />
+                на наш ВКонтакте
+              </Typography>
+
+              <LinkIcon className={styles.iconLink} />
+            </a>
+          </div>
         </div>
       </div>
     </section>

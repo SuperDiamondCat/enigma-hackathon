@@ -102,6 +102,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
 
   @media (max-width: 1320px) {
     padding-bottom: 20px;
@@ -131,21 +133,6 @@
   }
 }
 
-.participateButton:disabled {
-  background: var(--color-gray);
-  cursor: not-allowed;
-  box-shadow: none;
-
-  &:hover {
-    transform: translateY(55px);
-    box-shadow: none;
-
-    @media (max-width: 752px) {
-      transform: translateY(0);
-    }
-  }
-}
-
 @media (min-width: 752px) {
   .participateButton:hover {
     transform: scaleY(1.05) translateY(55px) scaleX(1.05);
@@ -153,7 +140,7 @@
   }
 }
 
-.telegramLink {
+.socialLink {
   display: inline-flex;
   animation: link-pulse 3s ease-in-out infinite;
   align-items: center;
@@ -174,6 +161,16 @@
     :hover {
       text-decoration: none;
     }
+  }
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+
+  @media (max-width: 1320px) {
+    gap: 24px;
   }
 }
 

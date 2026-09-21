@@ -5,10 +5,8 @@ import styles from "./Partners.module.scss";
 
 export const Partners = () => {
   const partners = [
-    { Logo: "/images/best-urfu.png", alt: "Partner 1" },
-    { Logo: "/images/iris.png", alt: "Partner 2" },
-    { Logo: "/images/pereplet.png", alt: "Partner 3" },
-    { Logo: "/images/urfu.png", alt: "Partner 4" },
+    { Logo: "/images/best-urfu.png", alt: "BEST UrFU" },
+    { Logo: "/images/urfu.png", alt: "УрФУ" },
   ];
 
   return (
