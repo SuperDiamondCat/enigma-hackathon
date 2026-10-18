@@ -35,12 +35,17 @@ export const Hero = () => {
         </div>
 
         <div className={styles.aboutActions}>
-          <button className={styles.participateButton}>
+          <a
+            href={LINKS.form}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.participateButton}
+          >
             <Typography variant="button" color="invert">
               УЧАСТВОВАТЬ
             </Typography>
             <div className={styles.clickHint} />
-          </button>
+          </a>
 
           <div className={styles.socials}>
             <a
