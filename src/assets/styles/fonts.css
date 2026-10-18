@@ -37,7 +37,7 @@
   font-family: "Iosevka";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/Iosevka-Bold.woff2") format("woff2");
+  src: url("/fonts/Iosevka-Bold-subset.woff2") format("woff2");
 }
 
 /* Px437 IBM BIOS */
