@@ -11,7 +11,7 @@ export const Map = () => {
       </Typography>
       <Window title="place.hack">
         <img
-          src="/images/map-8-marta.jpg"
+          src="/images/map-8-marta.webp"
           alt="Map"
           className={styles.map}
           onClick={() => {

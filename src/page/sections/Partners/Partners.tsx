@@ -5,8 +5,8 @@ import styles from "./Partners.module.scss";
 
 export const Partners = () => {
   const partners = [
-    { Logo: "/images/best-urfu.png", alt: "BEST UrFU" },
-    { Logo: "/images/urfu.png", alt: "УрФУ" },
+    { Logo: "/images/most-urfu.webp", alt: "МОСТ УрФУ" },
+    { Logo: "/images/urfu.webp", alt: "УрФУ" },
   ];
 
   return (
